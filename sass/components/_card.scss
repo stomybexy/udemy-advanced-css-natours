@@ -23,7 +23,6 @@
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
     overflow: hidden;
 
-
     &--front {
       background-color: $color-white;
     }
@@ -154,7 +153,9 @@
     font-weight: 100;
   }
 
-  @include respond(tab-port) {
+  //@include respond(tab-port) {
+  @media only screen and (max-width: 56.25em),
+  only screen and (hover: none) { // opposite == (hover: hover)
     //FUNCTIONALITY
 
     height: auto;
